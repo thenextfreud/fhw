@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Fuel Hospital Workers</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style Sheet -->
+    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel='icon' href='logo.png' type='image/x-icon' sizes="16x16" />
+
+    <!-- Script -->
+
+    <script src="scripts.js"></script>
+</head>
+
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img class="nav-logo" src="logo.png" alt="" width="6%" />
+            Fuel Hospital Workers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav md-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourImpact.html">Our Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="letter.html">Letter</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="admin@stopblindness.org" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+        </div>
+    </nav>
+
+    <main role="main" class="container text-center" style="margin-top: 100px">
+        <div class="col d-flex justify-content-center">
+            <div class="card" style="width: 50rem; margin: 30px;">
+                <div class="card-body text" onclick="donateButton()">
+                    <h4 class="card-title">Our Impact</h4>
+                    <div class="card-text text-justify">
+                        <p>Donations, big or small, can help hospital workers in localities stay fueled as
+                            well as boost morale. Across the nation, many are striving to help in any way
+                            as statewide stay-at-home orders remain in effect and all non-essential business
+                            and travel is shut down. Here are some ways we have helped:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 50rem; margin: 30px;">
+                <div class="card-body text" onclick="donateButton()">
+                    <h4 class="card-title">Spread The Help</h4>
+                    <div class="card-text text-justify">
+                        <p>
+                            Know a Hospital COVID unit in need of a morale boost? We welcome nominations for any hospital in need in New Jersey or New York State. Please send your nomination along with a narrative of the current situation at yours or your loved one’s hospital to admin@stopblindness.org. We will work to make it happen!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    <footer id="sticky-footer" class="bg-light text-white-50">
+        <div class="container text-center align-middle">
+            <a href="https://www.facebook.com/hashtag/inthistogether?source=feed_text&epa=HASHTAG&__xts__%5B0%5D=68.ARA4rKLHcutp7ukWZUyWyQ8PHl-xpDK-X0SOu6RwVOf6p_5m6p1o_26PDVF3iDTHHfjuFkpZVrXsp9gcpEv1o8tALwkfSNLLVLh4JJNN6wXEeNMOC9xTN9Xv_m0o_zn8lM79u3iGaNHbMExjCmfCnzeSl6xeoEd-MrgtOld9v_DFW71QiFEwXumJwpIQtIejbKDzIlPwJvwM9b6Hqy7IdyobZJyNTJcwQwGh1t9J56k_jfIWPeUxSoFgMxpRE6u7s948UIwOpWliKg721IeLJbBIStesfHDnB6y5rgxOP0P6pDjHIkyOMx4Jem7rNpbIQuWtjB3Crx7ofATEZ1W023Q&__tn__=%2ANK-R">#InThisTogether</a>
+            <text class="text-dark"> against </a>
+                <a href="https://www.facebook.com/hashtag/covid19?source=feed_text&epa=HASHTAG&__xts__[0]=68.ARA4rKLHcutp7ukWZUyWyQ8PHl-xpDK-X0SOu6RwVOf6p_5m6p1o_26PDVF3iDTHHfjuFkpZVrXsp9gcpEv1o8tALwkfSNLLVLh4JJNN6wXEeNMOC9xTN9Xv_m0o_zn8lM79u3iGaNHbMExjCmfCnzeSl6xeoEd-MrgtOld9v_DFW71QiFEwXumJwpIQtIejbKDzIlPwJvwM9b6Hqy7IdyobZJyNTJcwQwGh1t9J56k_jfIWPeUxSoFgMxpRE6u7s948UIwOpWliKg721IeLJbBIStesfHDnB6y5rgxOP0P6pDjHIkyOMx4Jem7rNpbIQuWtjB3Crx7ofATEZ1W023Q">#Covid19</a>.
+                <a class="text-sm-dark">Want to help, but can't donate?</a> Please <a href="mailto:admin@stopblindness.org?subject=How%20can%20I%20help?">reach out</a>. We can use your assistance!
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
