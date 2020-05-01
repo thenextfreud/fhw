@@ -1,0 +1,13 @@
+#sticky-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: .5rem;
+	display: flex;
+	background: rgba(197, 197, 197, 0.9);
+}
+
+.footer-text {
+	margin: auto;
+	font-size: x-small;
+}

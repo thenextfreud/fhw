@@ -1,0 +1,39 @@
+.image {
+	width: inherit;
+	height: 50rem;
+	z-index: -1;
+	background-image: url('../../images/hospital.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0rem;
+	padding: 1rem;
+}
+
+.card {
+	margin: 3rem auto 3rem auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(3px);
+	z-index: 0;
+	position: relative;
+	padding: 1rem;
+	border-radius: 1rem;
+	width: 40%;
+	height: fit-content;
+	box-shadow: 5px 0px 5px 0px rgb(20, 20, 20, .80);
+	align-self: center;
+}
+
+.card-title {
+	color: white;
+	margin: 1%;
+	padding: 1%;
+	text-align-last: center;
+}
+
+.card-text {
+	color: white;
+	opacity: 100%;
+	z-index: 2;
+	text-align: justify;
+}

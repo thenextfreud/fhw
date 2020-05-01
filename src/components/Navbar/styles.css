@@ -1,0 +1,44 @@
+#navbarContainer {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	position: fixed;
+	background: rgba(197, 197, 197, 0.9);
+	height: 3rem;
+	width: 100%;
+	z-index: 4;
+}
+
+#brand {
+	grid-column: 1;
+	display: flex;
+}
+
+#logo {
+	margin: auto;
+	z-index: 5;
+	max-width: 10%;
+}
+
+#brand-text {
+	margin: auto;
+	margin-left: 5px;
+	font-size: large;
+	color: red;
+	text-decoration: none;
+}
+
+#navbar {
+	grid-column: 2;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.navbarLink {
+	margin: auto;
+	font-size: small;
+}
+
+#donate {
+	grid-column: 3;
+	margin: auto;
+}
