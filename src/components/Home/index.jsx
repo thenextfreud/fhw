@@ -11,7 +11,7 @@ export default (props) => {
 			<div className="card">
 				<h3 className="card-title">{t.title}</h3>
 				<p className="card-text">
-					Easily Have an impact on the community that has given to us
+					Easily have an impact on the community that has given to us
 					much more than we can ever repay. With each individual
 					effort combined, we can do so much.
 				</p>
