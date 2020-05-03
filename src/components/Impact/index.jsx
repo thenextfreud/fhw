@@ -1,9 +1,8 @@
 import React from "react";
 import "./styles.css";
+import SlideShow from "../SlideShow";
 
-const t = {
-	title: "Fuel Hospital Workers",
-};
+import "./styles.css";
 
 export default (props) => {
 	return (
@@ -21,6 +20,9 @@ export default (props) => {
 							shut down.
 						</p>
 					</div>
+				</div>
+				<div className="card">
+					<SlideShow />
 				</div>
 			</div>
 		</div>

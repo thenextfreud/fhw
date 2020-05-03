@@ -31,7 +31,7 @@ export default (props) => {
 			<div className="card">
 				<p className="card-text">
 					<b>
-						Any and all donations are tax-deductible through SSAI.
+					Any and all donations are tax-deductible through SSAI.
 					</b>{" "}
 					100% of donations will be used to provide free meals for
 					workers serving on the front lines at hospitals in greatest
