@@ -2,8 +2,9 @@
 	position: relative;
 }
 
-.slide-container {
+.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap {
 	margin: auto;
+	flex-wrap: nowrap;
 }
 
 h3 {
@@ -15,19 +16,12 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
-	height: 500px;
-}
-
-.each-slide span {
-	padding: 20px;
-	font-size: 20px;
-	background: #efefef;
-	text-align: center;
 }
 
 .each-fade {
 	display: flex;
 	justify-content: center;
+	padding: 0%;
 }
 
 .each-fade .image-container {
@@ -56,4 +50,9 @@ h3 {
 .nav-right {
 	position: fixed;
 	right: 1px;
+}
+
+.indicators {
+	height: auto;
+	bottom: 0px;
 }
