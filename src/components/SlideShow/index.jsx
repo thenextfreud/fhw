@@ -17,6 +17,7 @@ const Slide = ({ image, alt = "" }) => (
 		</div>
 	</div>
 );
+
 class SlideShow extends React.Component {
 	importAll(r) {
 		return r.keys();
@@ -28,15 +29,14 @@ class SlideShow extends React.Component {
 		);
 		console.log(this.slides);
 	}
+
 	render() {
 		return (
 			<div className="slide-container">
 				<Fade {...fadeProperties}>
-					<div className="each-fade">
-						<div className="image-container">
-							<img src={this.slides[0]} alt={""} />
-						</div>
-					</div>{" "}
+					{this.slides.map((slide) => {
+						return <Slide {...slide} />;
+					})}
 				</Fade>
 			</div>
 		);
