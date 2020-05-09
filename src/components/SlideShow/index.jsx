@@ -1,6 +1,5 @@
 import React from "react";
 import { Fade } from "react-slideshow-image";
-import "./styles.css";
 
 const fadeProperties = {
 	duration: 5000,

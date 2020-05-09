@@ -9,8 +9,6 @@ import About from "./components/About";
 import Layout from "./components/Layout";
 import Letter from "./components/Letter";
 
-import "./styles.css";
-
 class App extends React.Component {
 	componentWillMount() {
 		document.title = "Fuel Hospital Workers!";

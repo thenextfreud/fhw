@@ -1,0 +1,17 @@
+.menu {
+	position: fixed;
+	display: grid;
+	justify-self: center;
+	background-color: gray;
+	left: 0;
+	justify-content: center;
+	width: 100vw;
+	box-shadow: 0px 1px 10px 0px;
+}
+
+.menu-item {
+	color: red;
+	margin: .75rem;
+	justify-self: center;
+	font-size: 1.25rem;
+}

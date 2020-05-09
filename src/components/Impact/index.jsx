@@ -1,8 +1,5 @@
 import React from "react";
-import "./styles.css";
 import SlideShow from "../SlideShow";
-
-import "./styles.css";
 
 export default (props) => {
 	return (

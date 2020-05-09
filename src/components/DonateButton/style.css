@@ -1,0 +1,42 @@
+.form {
+	height: 100%;
+	width: 100%;
+}
+
+.donate-button {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background: goldenrod;
+	border-radius: 99em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 700;
+	padding: 0rem;
+	border: 0rem;
+	transition: 0.2s ease;
+	box-shadow: 0px -12px 5px 0px inset rgba(0, 0, 0, .15);
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+
+.donate-text {
+	color: #00325d;
+	font-style: oblique;
+	margin: .2rem .5rem;
+	font-size: inherit;
+}
+
+.donate-button:focus {
+	outline: none;
+}
+
+
+.donate-button:hover {
+	filter: brightness(1.1);
+}
+
+.donate-button:active {
+	filter: brightness(0.9);
+}

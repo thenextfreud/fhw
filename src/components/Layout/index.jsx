@@ -1,15 +1,9 @@
 import React from "react";
-import "./styles.css";
-import Banner from "../Banner";
 
 import Navbar from "../Navbar/index";
 import Footer from "../Footer";
+import Banner from "../Banner";
 
-export default (props) => (
-	<>
-		{/* <Navbar />
-		{props.children}
-		<Footer /> */}
-		<Banner />
-	</>
-);
+export default (props) => <Banner showBanner={true} />;
+
+// <>{props.children}</Banner>;
