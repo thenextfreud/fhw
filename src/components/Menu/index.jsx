@@ -12,10 +12,12 @@ export default (props) => {
 				className="menu-icon"
 				src={MenuIcon}
 				alt="menu"
-				onClick={() => toggleVisibility(!isVisible)}
+				onClick={() => {
+					toggleVisibility(!isVisible)
+				}}
 			/>
 			{isVisible ? (
-				<MenuComponent onClick={() => toggleVisibility(!isVisible)} />
+				<MenuComponent visibilityToggler={toggleVisibility} />
 			) : null}
 		</>
 	);

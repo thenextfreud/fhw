@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.css";
 import DonateButton from "../DonateButton";
-import DonateCard from "../DonateCard";
+import Card from "../Card";
 
 export default (props) => {
 	return (
@@ -13,13 +13,13 @@ export default (props) => {
 					<DonateButton />
 				</div>
 			</div>
-			<DonateCard
+			<Card
 				title={"The Effort"}
 				text={`Join us in powering the community that has given to us
 						much more than we can ever repay. With each individual
 						effort combined, we can do so much.`}
 			/>
-			<DonateCard
+			<Card
 				title={`Why?`}
 				text={`Healthcare providers need the public’s support.
 						New York and New Jersey have nearly a third of the
