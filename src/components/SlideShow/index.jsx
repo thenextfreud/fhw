@@ -21,25 +21,6 @@ class SlideShow extends React.Component {
 	importAll(r) {
 		return r.keys();
 	}
-
-	componentWillMount() {
-		this.slides = this.importAll(
-			require.context("../../images/Slides", false, /\.(png|jpe?g|svg)$/),
-		);
-		console.log(this.slides);
-	}
-
-	render() {
-		return (
-			<div className="slide-container">
-				<Fade {...fadeProperties}>
-					{this.slides.map((slide) => {
-						return <Slide {...slide} />;
-					})}
-				</Fade>
-			</div>
-		);
-	}
 }
 
 export default SlideShow;

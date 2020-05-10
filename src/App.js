@@ -10,7 +10,7 @@ import Layout from "./components/Layout";
 import Letter from "./components/Letter";
 
 class App extends React.Component {
-	componentWillMount() {
+	UNSAFE_componentWillMount() {
 		document.title = "Fuel Hospital Workers!";
 	}
 

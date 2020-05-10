@@ -9,7 +9,7 @@ const links = {
 };
 
 export default (props) => (
-  <footer id="sticky-footer">
+  <footer className="footer">
     <div className="footer-text">
       <a href={links.InThisTogether}>#InThisTogether</a> against{" "}
       <a href={links.Covid19}>#Covid19</a>

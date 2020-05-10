@@ -1,9 +1,17 @@
 import React from "react";
 
-import Navbar from "../Navbar/index";
+import Navbar from "../Navbar/";
 import Footer from "../Footer";
-import Banner from "../Banner";
+import Home from "../Home";
 
-export default (props) => <Banner showBanner={true} />;
+export default (props) => {
+	return (
+		<>
+			<Navbar />
+			<div className="page-container">{props.children}</div>
+			<Footer />
+		</>
+	);
+};
 
 // <>{props.children}</Banner>;

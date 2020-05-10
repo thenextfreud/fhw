@@ -1,12 +1,22 @@
-import React from "react";
-import "./style.css";
+import React, { useState } from "react";
+import MenuIcon from "./menuIcon.svg";
+import "./styles.css";
+import MenuComponent from "./MenuComponent";
 
 export default (props) => {
+	const [isVisible, toggleVisibility] = useState(false);
+
 	return (
-		<div className="menu">
-			<div className="menu-item">About</div>
-			<div className="menu-item">Imapact</div>
-			<div className="menu-item">Letter</div>
-		</div>
+		<>
+			<img
+				className="menu-icon"
+				src={MenuIcon}
+				alt="menu"
+				onClick={() => toggleVisibility(!isVisible)}
+			/>
+			{isVisible ? (
+				<MenuComponent onClick={() => toggleVisibility(!isVisible)} />
+			) : null}
+		</>
 	);
 };

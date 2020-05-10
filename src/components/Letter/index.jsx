@@ -1,13 +1,12 @@
 import React from "react";
 import doc from "../../images/doc.jpg";
+import "../Home/style.css";
 
 export default (props) => {
 	return (
 		<div className="page">
-			<div className="image">
-				<div class="card">
-					<img class="img" src={doc} alt="" />
-				</div>
+			<div class="card">
+				<img src={doc} className="letter" alt="" />
 			</div>
 		</div>
 	);

@@ -1,22 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import p from "../../utils/paths";
-import DonateButton from "../DonateButton";
-
-import logo from "../../images/logo.png";
-
 import "./style.css";
+import logoImage from "../../images/logo.png";
+import DonateButton from "../DonateButton";
 import Menu from "../Menu";
 
 export default (props) => {
-	const isMobile = window.innerWidth <= 760;
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+
+	window.onresize = () => {
+		setIsMobile(window.innerWidth < 580);
+	};
+
 	return (
 		<div className="navbar">
-			{isMobile ? <Menu /> : null}
-			<Link id="brand" to={p.home}>
-				<img id="nav-logo" src={logo} alt="" />
+			<Link to="../">
+				<img className="nav-logo" src={logoImage} alt="Home" />
 			</Link>
-			<div id="nav-donate">
+
+			{isMobile ? (
+				<Menu />
+			) : (
+				<>
+					<div className="nav-links">
+						<Link to="../About">
+							<div className="nav-link">About</div>
+						</Link>
+						<Link to="../Impact">
+							<div className="nav-link">Impact</div>
+						</Link>
+						<Link to="../Letter">
+							<div className="nav-link">Letter</div>
+						</Link>
+					</div>
+				</>
+			)}
+
+			<div className="nav-donate">
 				<DonateButton />
 			</div>
 		</div>
