@@ -1,13 +1,4 @@
 import React from "react";
-import { Fade } from "react-slideshow-image";
-
-const fadeProperties = {
-	duration: 5000,
-	transitionDuration: 500,
-	infinite: true,
-	indicators: true,
-	pauseOnHover: true,
-};
 
 const Slide = ({ image, alt = "" }) => (
 	<div className="each-fade">
