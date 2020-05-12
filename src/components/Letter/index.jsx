@@ -4,7 +4,7 @@ import "../Home/style.css";
 
 export default (props) => {
 	return (
-		<div className="page">
+		<div className="page-container">
 			<div class="card">
 				<img src={doc} className="letter" alt="" />
 			</div>

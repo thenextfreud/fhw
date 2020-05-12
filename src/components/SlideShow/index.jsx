@@ -1,17 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import left from "./leftArrow.svg";
+import right from "./rightArrow.svg";
+import "./style.css";
+require("require-context/register");
 
-const Slide = ({ image, alt = "" }) => (
-	<div className="each-fade">
-		<div className="image-container">
-			<img src={image} alt={alt} />
-		</div>
-	</div>
-);
+const slideCount = 4;
+let current = 1;
 
-class SlideShow extends React.Component {
-	importAll(r) {
-		return r.keys();
+export default (props) => {
+	let pics = [];
+	for (let i = 0; i < slideCount; i++) {
+		pics.push(require(`../../images/Slides/${i}.jpeg`));
 	}
-}
 
-export default SlideShow;
+	const [slide, changeSlide] = useState(pics[current]);
+
+	function getSlide() {
+		return pics[current];
+	}
+
+	function nextSlide() {
+		current++;
+		if (current >= slideCount) current = 0;
+		console.log(current);
+		changeSlide(getSlide());
+	}
+	function prevSlide() {
+		current--;
+		if (current < 0) current = slideCount - 1;
+		console.log(current);
+		changeSlide(getSlide());
+	}
+
+	return (
+		<div className="card">
+			<div className="slideshow-container">
+				<img
+					className="slideshow-left slideshow-button"
+					src={right}
+					alt=""
+					onClick={() => prevSlide()}
+				/>
+				<div className="slideshow">
+					<div className="slide-container">
+						<img src={slide} alt="" className="slide" />
+					</div>
+				</div>
+				<img
+					className="slideshow-right slideshow-button"
+					src={right}
+					alt=""
+					onClick={() => nextSlide()}
+				/>
+			</div>
+		</div>
+	);
+};
