@@ -14,7 +14,7 @@ export default (props) => {
 
 	return (
 		<div className="navbar">
-			<Link to="../">
+			<Link to="../" className="nav-logo-container">
 				<img className="nav-logo" src={logoImage} alt="Home" />
 			</Link>
 
@@ -35,9 +35,10 @@ export default (props) => {
 					</div>
 				</>
 			)}
-
-			<div className="nav-donate">
-				<DonateButton />
+			<div className="nav-donate-container">
+				<div className="nav-donate">
+					<DonateButton />
+				</div>
 			</div>
 		</div>
 	);
