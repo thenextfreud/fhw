@@ -1,0 +1,36 @@
+.slideshow-container {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+}
+
+.slideshow-button {
+	height: 2rem;
+	width: 2rem;
+	justify-self: center;
+	align-self: center;
+	font-weight: 800;
+	font-size: 1.5rem;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 100%;
+	display: grid;
+	align-content: center;
+	box-shadow: 1px 1px 10px 0px;
+	cursor: pointer;
+}
+
+.slideshow-left {
+	transform: rotateY(180deg);
+}
+
+.slide-container {
+	grid-column: 2;
+	width: 100%;
+	max-width: 45rem;
+	margin: auto;
+}
+
+.slide{
+	width: 100%;
+	margin: auto;
+	margin-top: 1rem;
+}
