@@ -1,108 +1,121 @@
 * {
-	margin: 0;
+  margin: 0;
 }
 
-
 .page-container {
-	background-image: linear-gradient(45deg, skyblue, pink);
-	width: 100%;
-	padding-top: calc(3rem + 10px);
-	padding-bottom: calc(2.2rem + 10px);
-	justify-content: center;
-	position: relative;
-	min-height: fit-content;
+  background-image: linear-gradient(45deg, skyblue, pink);
+  width: 100%;
+  padding-top: calc(3rem + 10px);
+  padding-bottom: calc(2.2rem + 10px);
+  justify-content: center;
+  position: relative;
+  min-height: fit-content;
 }
 
 .hosp-banner {
-	background-image: url("../../images/hosp-cropped.jpg");
-	background-repeat: false;
-	background-position-x: 20%;
-	width: auto;
-	height: calc(100vh - 5.2rem - 20px);
-	box-shadow: 4px 2px 10px -2px inset;
-	display: grid;
-	grid-template-rows: auto auto;
-	z-index: -11;
+  background-image: url("../../images/hosp-cropped.jpg");
+  background-repeat: false;
+  background-position-x: 20%;
+  width: auto;
+  height: calc(100vh - 5.2rem - 20px);
+  box-shadow: 4px 2px 10px -2px inset;
+  display: grid;
+  grid-template-rows: auto auto;
+  z-index: -11;
 }
 
-.title {
-	margin: auto;
-	color: red;
-	font-weight: 1000;
-	line-height: 120%;
-	font-size: 5.2rem;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	justify-self: center;
-	text-align: center;
-	-webkit-text-stroke: 3px black;
+h1 {
+  margin: auto;
+  margin-top: 0rem;
+  color: red;
+  font-weight: 900;
+  line-height: 120%;
+  font-size: 5.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-self: center;
+  text-align: center;
+  -webkit-text-stroke: 3px black;
+}
 
+h3 {
+  margin: auto;
+  margin-bottom: 1rem;
+  color: red;
+  font-weight: 900;
+  line-height: 120%;
+  font-size: 2.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-self: center;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
 }
 
 .banner-donate {
-	max-width: 12rem;
-	justify-self: center;
-	align-self: center;
-	max-height: 4rem;
-	height: 90%;
-	width: 90%;
-	font-size: 200%;
-
+  max-width: 12rem;
+  justify-self: center;
+  align-self: center;
+  max-height: 4rem;
+  height: 90%;
+  width: 90%;
+  font-size: 200%;
 }
 
 .card-container {
-	margin: auto;
-	max-width: 600px;
+  margin: auto;
+  max-width: 600px;
 }
 
 .card {
-	background-image: linear-gradient(225deg, powderblue, aliceblue);
-	justify-self: center;
-	border-radius: 25px;
-	margin: 4%;
-	display: grid;
-	max-width: 90%;
+  background-image: linear-gradient(225deg, powderblue, aliceblue);
+  justify-self: center;
+  border-radius: 25px;
+  margin: 4%;
+  display: grid;
+  max-width: 90%;
 }
 
 .card-title {
-	justify-self: center;
-	font-size: 200%;
-	color: red;
-	margin-top: 2rem;
+  justify-self: center;
+  font-size: 200%;
+  color: red;
+  margin-top: 2rem;
 }
 
 .card-text {
-	padding: 2% 5%;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	line-height: 200%;
-	font-size: 120%;
-	font-weight: 400;
+  padding: 2% 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 200%;
+  font-size: 120%;
+  font-weight: 400;
 }
 
 .card-donate {
-	padding: 2%;
-	height: 2rem;
-	max-width: 10rem;
-	justify-self: center;
+  padding: 2%;
+  height: 2rem;
+  max-width: 10rem;
+  justify-self: center;
 }
 
 .footer {
-	background-image: linear-gradient(180deg, darkgray, gray);
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 2.2rem;
-	padding: 5px;
+  background-image: linear-gradient(180deg, darkgray, gray);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.2rem;
+  padding: 5px;
 }
 
 .footer-text {
-	color: darkred;
-	text-align: center;
+  color: darkred;
+  text-align: center;
 }
 
 button {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 .letter {
-	width: 100%;
+  width: 100%;
 }
