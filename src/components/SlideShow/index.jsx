@@ -4,7 +4,7 @@ import right from "./rightArrow.svg";
 import "./style.css";
 require("require-context/register");
 
-const slideCount = 4;
+const slideCount = 11;
 let current = 1;
 
 export default (props) => {
