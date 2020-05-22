@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import logoImage from "../../images/logo.png";
 import DonateButton from "../DonateButton";
-import Menu from "../Menu";
+import Menu from "./Menu";
 
 export default (props) => {
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
@@ -12,6 +12,18 @@ export default (props) => {
 		setIsMobile(window.innerWidth < 580);
 	};
 
+	const links = [
+		{
+			link: "About",
+		},
+		{
+			link: "Impact",
+		},
+		{
+			link: "Letter",
+		},
+	];
+
 	return (
 		<div className="navbar">
 			<Link to="../" className="nav-logo-container">
@@ -19,19 +31,15 @@ export default (props) => {
 			</Link>
 
 			{isMobile ? (
-				<Menu />
+				<Menu links={links} />
 			) : (
 				<>
 					<div className="nav-links">
-						<Link to="../About">
-							<div className="nav-link">About</div>
-						</Link>
-						<Link to="../Impact">
-							<div className="nav-link">Impact</div>
-						</Link>
-						<Link to="../Letter">
-							<div className="nav-link">Letter</div>
-						</Link>
+						{links.map((a) => (
+							<Link to={`../${a.link}`}>
+								<div className="nav-link">{a.link}</div>
+							</Link>
+						))}
 					</div>
 				</>
 			)}
