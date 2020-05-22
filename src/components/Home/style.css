@@ -41,12 +41,12 @@ h1 {
 h3 {
   margin: auto;
   margin-bottom: 1rem;
-  color: red;
+  color: goldenrod;
+  filter: brightness(140%);
   font-weight: 900;
   line-height: 120%;
-  font-size: 2.8rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.4rem;
+  font-family: cursive;
   justify-self: center;
   text-align: center;
   -webkit-text-stroke: 2px black;
