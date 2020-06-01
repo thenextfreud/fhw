@@ -1,9 +1,10 @@
 .slideshow-container {
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
-	max-width: 45rem;
+	max-width: 100%;
 	max-height: 30rem;
 	justify-self: center;
+	width: 100%;
 }
 
 .slideshow {
@@ -13,7 +14,7 @@
 	margin: auto;
 	max-height: inherit;
 	max-width: inherit;
-	width: auto;
+	width: 100%;
 	height: auto;
 }
 
@@ -36,6 +37,10 @@
 	transform: rotateY(180deg);
 }
 
+.slideshow-right {
+	grid-column: 3;
+}
+
 .slide-container {
 	width: auto;
 	max-width: 100%;
@@ -43,7 +48,6 @@
 	max-height: inherit;
 	margin: auto;
 	justify-self: center;
-	;
 }
 
 .slide {

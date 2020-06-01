@@ -22,6 +22,9 @@ export default (props) => {
 		{
 			link: "Letter",
 		},
+		{
+			link: "Plasma"
+		}
 	];
 
 	return (

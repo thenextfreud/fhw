@@ -9,7 +9,7 @@
   padding-bottom: calc(2.2rem + 10px);
   justify-content: center;
   position: relative;
-  min-height: fit-content;
+  min-height: 85vh;
 }
 
 .hosp-banner {

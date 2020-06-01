@@ -8,18 +8,20 @@
 	z-index: 2;
 	box-shadow: 2px 2px 10px -2px;
 	display: grid;
-	grid-template-columns: 30% 40% 30%;
+	grid-template-columns: 20% 60% 20%;
 	padding: 5px;
 }
-.nav-logo-container{
+
+.nav-logo-container {
 	left: 1rem;
 }
+
 .nav-logo {
 	height: 3rem;
 	border-radius: 100%;
 }
 
-.nav-donate-container{
+.nav-donate-container {
 	width: 100%;
 	margin: auto;
 }
@@ -36,7 +38,7 @@
 	grid-column: 2;
 	margin: auto;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 }
 
 .nav-link {
